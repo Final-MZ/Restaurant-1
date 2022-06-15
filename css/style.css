@@ -3,4 +3,9 @@ header p {
   background-color: rebeccapurple;
 }
 
+main p {
+  background-color: aqua;
+  color: red;
+}
+
 /*# sourceMappingURL=style.css.map */
