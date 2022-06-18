@@ -1,5 +1,25 @@
-header p {
-    color: orange;
-    background-color: rebeccapurple;
-
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+background-color: rgba(3, 2, 2, 0.185);
+     nav {
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.5rem;
+     }
+nav a {
+        text-decoration: none;
+    color: white;
+     }
+     .logo  img{
+      border-radius: 50%;
+}
+nav .buttom{
+   border: 1px solid white;
+   padding: 0.5rem;
+}
 }
