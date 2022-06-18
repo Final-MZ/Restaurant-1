@@ -37,13 +37,4 @@ header nav .buttom {
   padding: 0.5rem;
 }
 
-@media screen and (max-width: 520px) {
-  header {
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
 /*# sourceMappingURL=style.css.map */
