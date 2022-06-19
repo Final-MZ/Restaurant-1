@@ -1,25 +1,20 @@
-header {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-background-color: rgba(3, 2, 2, 0.185);
-     nav {
-        
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 1.5rem;
-     }
-nav a {
-        text-decoration: none;
-    color: white;
-     }
-     .logo  img{
-      border-radius: 50%;
-}
-nav .buttom{
-   border: 1px solid white;
-   padding: 0.5rem;
-}
-}
+.links {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color:white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+ }
+nav {
+    padding: 20px;
+ }
+ nav a img {
+    border-radius: 50%;
+    margin-top: -20px;
+ }
+ .rightSection {
+    float: right;
+ }
