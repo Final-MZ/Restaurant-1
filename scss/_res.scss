@@ -1,4 +1,4 @@
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
    nav {
 padding-left: 0;
    }
@@ -9,14 +9,12 @@ padding-left: 0;
        width: 130px;
     }
     .nav-rightSection {
-        margin: 20px;
        float: none;
 margin-top: -20px;
 
     }
     .nav-links__buttom {
       margin-top: 20px;
-      
     }
     .nav-links__logo{
       margin-top: -10px;
@@ -26,7 +24,48 @@ margin-top: -20px;
       color: red;
       font-size: 10px;
       top: 90%;
-      left: 2.5rem;
+      left: 2rem;
       font-weight: bolder;
     }
+   //   start-section
+    section {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+   }
+   .section__ang {
+      padding: 0;
+   }
+    .section-angebote{
+      width: 100%;
+      gap: 0;
+    }
+    .öffnungszeiten {
+      width: 100%;
+  padding: 0px;
+  padding-top: 50px;
+  }
+    .öffnungszeiten__table-size  {
+      font-size: 6px;
+      padding: 10px;
+  }
+  .öffnungszeiten__h1{
+   font-size: 12px;}
+   .section-angebote__list {
+      font-size: 12px;
+   }
+   .section-angebote__img {
+      border-radius: 20%;
+      height: 60px;
+      }
+ }
+ @media screen and (min-width: 550px) and (max-width: 850px){
+   .öffnungszeiten {
+    padding: 0;
+  }
+  .öffnungszeiten__table-size  {
+      font-size: 15px;
+      border: 1px solid gray;
+      padding: 0;
+  }
  }

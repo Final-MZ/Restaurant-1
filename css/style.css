@@ -70,24 +70,31 @@ nav a img {
 }
 
 section {
-  width: 100%;
-  padding: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
-  grid-template-rows: 600px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.section__ang {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  padding: 50px;
+  background-image: url(/css/täglich2.png);
+  background-size: cover;
+  background-position: center;
 }
 
 .section-angebote {
-  padding: 10px;
-  width: 300px;
-  border: 1px solid black;
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 20vw;
 }
 
 .section-angebote__img {
   border-radius: 20%;
+  height: 80px;
 }
 
 .section-angebote__list {
@@ -95,10 +102,39 @@ section {
 }
 
 .öffnungszeiten {
-  grid-column: 3/4;
+  width: 100%;
+  background-size: cover;
+  background-image: url(/css/open4.png);
+  background-position: center;
+  color: rgb(255, 0, 0);
+  padding-top: 50px;
+  padding-left: 60px;
 }
 
-@media screen and (max-width: 500px) {
+.öffnungszeiten__table-size {
+  font-size: 16px;
+  border: 1px solid gray;
+  padding: 20px 30px;
+}
+
+.öffnungszeiten__table {
+  border: 2px solid gray;
+  border-collapse: collapse;
+}
+
+.section-angebote__del {
+  color: red;
+}
+
+.section-angebote__list-girecht {
+  color: blueviolet;
+}
+
+.section-angebote__list-preis {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 550px) {
   nav {
     padding-left: 0;
   }
@@ -109,7 +145,6 @@ section {
     width: 130px;
   }
   .nav-rightSection {
-    margin: 20px;
     float: none;
     margin-top: -20px;
   }
@@ -124,8 +159,49 @@ section {
     color: red;
     font-size: 10px;
     top: 90%;
-    left: 2.5rem;
+    left: 2rem;
     font-weight: bolder;
+  }
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .section__ang {
+    padding: 0;
+  }
+  .section-angebote {
+    width: 100%;
+    gap: 0;
+  }
+  .öffnungszeiten {
+    width: 100%;
+    padding: 0px;
+    padding-top: 50px;
+  }
+  .öffnungszeiten__table-size {
+    font-size: 6px;
+    padding: 10px;
+  }
+  .öffnungszeiten__h1 {
+    font-size: 12px;
+  }
+  .section-angebote__list {
+    font-size: 12px;
+  }
+  .section-angebote__img {
+    border-radius: 20%;
+    height: 60px;
+  }
+}
+@media screen and (min-width: 550px) and (max-width: 850px) {
+  .öffnungszeiten {
+    padding: 0;
+  }
+  .öffnungszeiten__table-size {
+    font-size: 15px;
+    border: 1px solid gray;
+    padding: 0;
   }
 }
 
