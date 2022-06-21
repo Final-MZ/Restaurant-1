@@ -1,0 +1,25 @@
+section {
+    width: 100%;
+    padding:  50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr  2fr;
+    grid-template-rows: 600px;
+
+}
+.section-angebote{
+    padding: 10px;
+    width: 300px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.section-angebote__img {
+border-radius: 20%;
+}
+.section-angebote__list {
+    list-style-type: none;
+}
+.öffnungszeiten {
+    grid-column: 3/4;
+}
